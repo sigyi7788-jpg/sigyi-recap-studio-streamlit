@@ -1,0 +1,21 @@
+{
+  "name": "sigyi-recap-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000"
+  },
+  "dependencies": {
+    "@andresaya/edge-tts": "^1.9.1",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/core": "0.12.6",
+    "@ffmpeg/util": "^0.12.1",
+    "mediabunny": "^1.62.1"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

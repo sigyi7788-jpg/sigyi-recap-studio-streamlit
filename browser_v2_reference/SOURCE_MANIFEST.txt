@@ -1,0 +1,34 @@
+Si Gyi Recap Studio — Complete source package
+
+Included source files:
+- SETUP_GUIDE.md
+- SOURCE_MANIFEST.txt
+- RESEARCH.md
+- TODO.md
+- app.config.ts
+- index.html
+- package.json
+- pnpm-lock.yaml
+- pnpm-workspace.yaml
+- vercel.json
+- vite.config.js
+- api/tts.js
+- legacy/bot.py
+- public/manus-routes.json
+- src/main.js
+- src/styles.css
+
+Excluded intentionally:
+- node_modules/ — reinstall with pnpm install
+- dist/ — recreate with pnpm build
+- .git/ — repository history is not source code
+- local caches and temporary files
+
+
+Latest Render Update (2026-10-26):
+- src/lib/render.js: source scenes are trimmed by Gemini scene timestamps and duration-fitted to matching generated TTS timeline segments; voiceover/subtitles use the same timeline. 360p uses 20 fps to reduce encode work; 720p/1080p remain 24 fps. Optional transparent logo overlay is supported.
+- src/main.js: optional logo upload/position controls and a pre-download video preview callout.
+- src/styles.css: logo controls and preview callout styles.
+- src/lib/gemini.js and src/lib/tts.js are unchanged. api/tts.js is unchanged.
+
+SPEED_SYNC_STYLE_UPDATE.md - upload-stage voice/style, independent captionY, 720p 20fps optimization
